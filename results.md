@@ -35,7 +35,7 @@ The baseline comparison demonstrates the fundamental value of PAC-Bayes certifie
 
 Testing across multiple noise levels (5%, 10%, 20%) demonstrates the robustness of PAC-Bayes certified bounds under varying measurement uncertainty.
 
-![Noise Impact Analysis]({{ "/assets/plots/phase7_noise_impact.png" | relative_url }})
+![Noise Impact Analysis](/assets/plots/phase7_noise_impact.png)
 
 **Figure 2**: Coverage (left) and interval width (right) vs noise level. Certified bounds maintain target 95% coverage across all noise conditions while uncertified intervals show degraded performance.
 
