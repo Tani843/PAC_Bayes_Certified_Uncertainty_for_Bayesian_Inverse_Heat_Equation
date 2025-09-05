@@ -1,8 +1,8 @@
 # Jekyll Configuration for PAC-Bayes Certified Uncertainty Documentation
 title: "PAC-Bayes Certified Uncertainty for Bayesian Inverse Heat Equation"
 description: "Complete documentation for PAC-Bayes certified bounds applied to inverse PDE problems"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yourusername.github.io" # Change to your GitHub Pages URL
+baseurl: "/PAC_Bayes_Certified_Uncertainty_for_Bayesian_Inverse_Heat_Equation" # GitHub Pages subdirectory
+url: "https://Tani843.github.io" # GitHub Pages base URL
 
 # Build settings
 markdown: kramdown
@@ -12,6 +12,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-relative-links
 
 # Kramdown settings
 kramdown:
@@ -57,11 +59,12 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - src/
-  - results/
   - data/
-  - plots/
+  - "*.py"
+  - "*.sh"
+  - requirements.txt
+  - README.md
 
-# Include custom assets
-include:
+# Keep in build
+keep_files:
   - assets/plots/
-  - docs/assets/plots/

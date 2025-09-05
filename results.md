@@ -15,7 +15,7 @@ This page presents the complete results from Phase 6 validation experiments, vis
 ## Baseline Performance
 The baseline comparison demonstrates the fundamental value of PAC-Bayes certified bounds compared to standard uncertified Bayesian credible intervals.
 
-![Posterior Distribution with Uncertainty Intervals](/assets/plots/phase7_posterior_histogram.png)
+![Posterior Distribution with Uncertainty Intervals]({{ "/assets/plots/phase7_posterior_histogram.png" | relative_url }})
 
 **Figure 1**: Posterior distribution showing uncertified 95% credible interval (blue) and certified PAC-Bayes interval (green) with true parameter κ=5.0 (orange dashed line). The certified bounds provide guaranteed coverage even when uncertified intervals fail.
 
@@ -35,7 +35,7 @@ The baseline comparison demonstrates the fundamental value of PAC-Bayes certifie
 
 Testing across multiple noise levels (5%, 10%, 20%) demonstrates the robustness of PAC-Bayes certified bounds under varying measurement uncertainty.
 
-![Noise Impact Analysis](/assets/plots/phase7_noise_impact.png)
+![Noise Impact Analysis]({{ "/assets/plots/phase7_noise_impact.png" | relative_url }})
 
 **Figure 2**: Coverage (left) and interval width (right) vs noise level. Certified bounds maintain target 95% coverage across all noise conditions while uncertified intervals show degraded performance.
 
@@ -51,7 +51,7 @@ Testing across multiple noise levels (5%, 10%, 20%) demonstrates the robustness 
 ## Sensor Sparsity Impact
 Evaluation with reduced sensor configurations (3→2→1 sensors) tests the method's performance under sparse observational data.
 
-![Sensor Sparsity Analysis](/assets/plots/phase7_sensor_impact.png)
+![Sensor Sparsity Analysis]({{ "/assets/plots/phase7_sensor_impact.png" | relative_url }})
 
 **Figure 3**: Performance with reduced sensors. Coverage (left) and interval width (right) vs number of sensors. Certified bounds maintain reliability even with minimal sensor data.
 
@@ -69,7 +69,7 @@ Evaluation with reduced sensor configurations (3→2→1 sensors) tests the meth
 
 Analysis of forward solver performance across grid resolutions demonstrates practical scalability for real-world inverse problems.
 
-![Scalability Analysis](/assets/plots/phase7_scalability.png)
+![Scalability Analysis]({{ "/assets/plots/phase7_scalability.png" | relative_url }})
 
 **Figure 4**: Solver performance vs grid size. Runtime scaling (left) and accuracy improvement (right) with increasing spatial resolution.
 
@@ -88,7 +88,7 @@ Analysis of forward solver performance across grid resolutions demonstrates prac
 
 Comprehensive comparison of certified vs uncertified performance across all experimental conditions.
 
-![Coverage and Efficiency Analysis](/assets/plots/phase7_coverage_efficiency.png)
+![Coverage and Efficiency Analysis]({{ "/assets/plots/phase7_coverage_efficiency.png" | relative_url }})
 
 **Figure 5**: Empirical coverage (left) and efficiency ratios (right) across all conditions. Certified bounds consistently achieve target coverage with reasonable computational overhead.
 
