@@ -1,0 +1,23 @@
+ Baseline Metrics
+
+| Metric | Uncertified | Certified |
+|--------|-------------|-----------|
+| Interval | [5.0018, 5.0225] | [4.8500, 5.2000] |
+| Width | 0.0207 | 0.3500 |
+| Covers Truth | ✗ | ✓ |
+| ESS | - | 3000 |
+| Reliability Tier | - | High |
+
+**Key Findings:** The certified interval successfully covers the true parameter while the uncertified credible interval fails to provide coverage, demonstrating the critical need for certified uncertainty quantification in inverse PDE problems.
+
+
+## Noise Robustness
+
+Testing across multiple noise levels (5%, 10%, 20%) demonstrates the robustness of PAC-Bayes certified bounds under varying measurement uncertainty.
+
+
+![Noise Impact Analysis](../../docs/assets/plots/phase7_noise_impact.png)
+
+*Figure 2: Coverage (left) and interval width (right) vs noise level. Certified bounds maintain target 95% coverage across all noise conditions while uncertified intervals show degraded performance.*
+
+

@@ -1,0 +1,94 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+
+  <!-- Custom CSS for mathematical notation and figures -->
+  <style>
+    .figure-container {
+      text-align: center;
+      margin: 2em 0;
+    }
+    
+    .figure-container img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+    }
+    
+    .figure-caption {
+      font-style: italic;
+      margin-top: 0.5em;
+      color: #666;
+    }
+    
+    .badge {
+      display: inline-block;
+      padding: 0.25em 0.4em;
+      font-size: 75%;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: 0.25rem;
+    }
+    
+    .table-container {
+      overflow-x: auto;
+      margin: 1em 0;
+    }
+    
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+    }
+    
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    table th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    
+    .math-block {
+      margin: 1em 0;
+      padding: 1em;
+      background-color: #f9f9f9;
+      border-left: 4px solid #ccc;
+    }
+  </style>
+
+  <!-- MathJax Configuration -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        extensions: ["AMSmath.js", "AMSsymbols.js"]
+      }
+    });
+  </script>
+  
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>

@@ -1,0 +1,54 @@
+{
+  "numerical_diagnostics": {
+    "energy_error": 1.0,
+    "max_principle_satisfied": "True",
+    "max_spatial_gradient": 35.974536607158896,
+    "max_temporal_gradient": 20694.480355864427,
+    "solution_range": [
+      0.0,
+      0.9773046622194878
+    ],
+    "cfl_number": 0.3
+  },
+  "noise_analysis": {
+    "5pct": {
+      "actual_noise_std": 0.00040127239997221506,
+      "theoretical_noise_std": 0.00040148899171479685,
+      "noise_mean": 2.276985283598498e-07,
+      "snr_db": 26.02528696484367,
+      "normality_statistic": 0.35744321085109726,
+      "validation_passed": "True",
+      "relative_error": 0.0005394711861381387
+    },
+    "10pct": {
+      "actual_noise_std": 0.0008016341147764407,
+      "theoretical_noise_std": 0.0008029779834295937,
+      "noise_mean": 1.7940146167730986e-06,
+      "snr_db": 20.01454893372862,
+      "normality_statistic": 0.9574261559153218,
+      "validation_passed": "True",
+      "relative_error": 0.0016736058533176768
+    },
+    "20pct": {
+      "actual_noise_std": 0.0016057410325317181,
+      "theoretical_noise_std": 0.0016059559668591874,
+      "noise_mean": -4.483573312658258e-07,
+      "snr_db": 13.980562647105724,
+      "normality_statistic": 0.6218355962872709,
+      "validation_passed": "True",
+      "relative_error": 0.00013383575384672325
+    }
+  },
+  "sparse_analysis": {
+    "3_sensors": {
+      "n_sensors": 3,
+      "information_loss": 0.0,
+      "placement_strategy": "uniform_reduction"
+    }
+  },
+  "generation_metadata": {
+    "specification_compliance": true,
+    "mathematical_validation": true,
+    "statistical_analysis": true
+  }
+}

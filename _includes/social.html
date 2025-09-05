@@ -1,0 +1,34 @@
+{%- assign social = site.minima.social_links -%}
+
+<ul class="social-media-list">
+  {%- if site.github_username -%}
+  <li>
+    <a href="https://github.com/{{ site.github_username | cgi_escape | escape }}">
+      <svg class="svg-icon">
+        <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
+      </svg>
+      <span class="username">{{ site.github_username }}</span>
+    </a>
+  </li>
+  {%- endif -%}
+
+  {%- if site.email -%}
+  <li>
+    <a href="mailto:{{ site.email }}">
+      <svg class="svg-icon">
+        <use xlink:href="{{ '/assets/minima-social-icons.svg#email' | relative_url }}"></use>
+      </svg>
+      <span class="username">{{ site.email }}</span>
+    </a>
+  </li>
+  {%- endif -%}
+
+  <li>
+    <a href="{{ "/feed.xml" | relative_url }}">
+      <svg class="svg-icon">
+        <use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+      </svg>
+      <span>Subscribe</span>
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,59 @@
+# Jekyll Configuration for PAC-Bayes Heat Equation Documentation
+
+# Site settings
+title: "PAC-Bayes Certified Uncertainty for Bayesian Inverse Heat Equation"
+description: "Bridging rigorous probability bounds with applied scientific computing. First application of PAC-Bayes bounds to PDE inverse problems."
+
+baseurl: "/PAC_Bayes_Certified_Uncertainty_for_Bayesian_Inverse_Heat_Equation"
+url: "https://tani843.github.io"
+
+# Author info
+author:
+  name: "Tanisha Gupta"
+  email: "tanisha@example.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Kramdown settings
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# MathJax configuration
+mathjax:
+  source: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
+  config: 'MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]], displayMath: [["$$","$$"],["\\[","\\]"]], processEscapes: true}})'
+
+# Navigation
+header_pages:
+  - about.md
+  - methodology.md
+  - results.md
+  - conclusion.md
+  - contact.md
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  theory:
+    output: true
+    permalink: /:collection/:name/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - assets/plots/*.svg
+  - assets/plots/*.png

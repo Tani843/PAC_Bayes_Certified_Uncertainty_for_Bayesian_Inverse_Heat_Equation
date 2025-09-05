@@ -1,0 +1,14 @@
+{
+  "prior_bounds": [
+    1.0,
+    10.0
+  ],
+  "n_walkers": 32,
+  "n_samples": 1500,
+  "n_chains": 4,
+  "rhat_threshold": 1.1,
+  "min_effective_samples": 100,
+  "use_multiprocessing": false,
+  "noise_std": 0.001,
+  "true_kappa": 5.0
+}

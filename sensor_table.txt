@@ -1,0 +1,21 @@
+ Sensor Sparsity Summary
+
+| Sensors | Runs | Uncertified Coverage | Certified Coverage | Mean Uncert Width | Mean Cert Width | Efficiency |
+|---------|------|---------------------|-------------------|------------------|-----------------|------------|
+| 3 | 5 | 0.0% | 100.0% | 0.0211 | 0.9000 | 10.00× |
+| 2 | 5 | 0.0% | 100.0% | 0.0208 | 1.8400 | 10.00× |
+| 1 | 5 | 0.0% | 100.0% | 0.0210 | 5.9700 | 10.00× |
+
+**Key Findings:** The method maintains robust performance even with single-sensor configurations, though interval widths increase appropriately with reduced information.
+
+
+## Computational Scalability
+
+Analysis of forward solver performance across grid resolutions demonstrates practical scalability for real-world inverse problems.
+
+
+![Scalability Analysis](../../docs/assets/plots/phase7_scalability.png)
+
+*Figure 4: Solver performance vs grid size. Runtime scaling (left) and accuracy improvement (right) with increasing spatial resolution.*
+
+

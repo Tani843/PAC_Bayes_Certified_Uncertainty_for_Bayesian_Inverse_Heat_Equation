@@ -1,0 +1,32 @@
+{
+  "true_kappa": 5.0,
+  "domain_length": 1.0,
+  "final_time": 0.5,
+  "nx": 100,
+  "cfl_factor": 0.3,
+  "stability_tolerance": 1e-06,
+  "sensor_locations": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "sensor_distribution": "specification",
+  "noise_levels": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "noise_model": "gaussian",
+  "noise_seed": 42,
+  "sparse_sensor_counts": [
+    3
+  ],
+  "sparse_strategies": [
+    "uniform_reduction",
+    "optimal_placement"
+  ],
+  "initial_condition_type": "gaussian_pulse",
+  "ic_center": 0.3,
+  "ic_width": 0.02,
+  "ic_amplitude": 1.0
+}

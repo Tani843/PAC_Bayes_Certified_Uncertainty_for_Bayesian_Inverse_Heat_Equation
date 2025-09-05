@@ -1,0 +1,35 @@
+{
+  "dataset_info": {
+    "generation_date": "2025-08-28 09:03:01",
+    "canonical_dataset": "canonical_dataset.npz",
+    "canonical_noise_level": "10pct",
+    "purpose": "PAC-Bayes Heat Equation Research - Numerically Stable"
+  },
+  "problem_setup": {
+    "true_kappa": 5.0,
+    "domain_length": 1.0,
+    "final_time": 0.5,
+    "nx": 100,
+    "sensor_locations": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "temperature_scale_factor": 100.0
+  },
+  "canonical_dataset": {
+    "file": "canonical_dataset.npz",
+    "noise_level": "10pct",
+    "n_observations": 80,
+    "n_sensors": 3,
+    "observation_time_range": [
+      0.05000306091215182,
+      0.5
+    ]
+  },
+  "numerical_stability": {
+    "temperature_scaling_applied": true,
+    "temperature_scale_factor": 100.0,
+    "validation_passed": true
+  }
+}

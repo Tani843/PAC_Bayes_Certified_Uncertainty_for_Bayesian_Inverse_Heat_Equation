@@ -1,0 +1,43 @@
+BACKGROUND MCMC RUN - NO TIMEOUT
+==================================================
+Observations set: (80, 3), noise_std = 0.0072
+Dataset verified: 240 observations
+True kappa: 5.0
+Likelihood: 844.68 in 0.564 seconds
+Estimated runtime: 33.8 minutes
+Starting MCMC at: 13:35:48
+Starting Bayesian inference with 2 chains
+
+Iteration 1/5
+Running MCMC chain 1/2
+  Burn-in: 600 steps
+  Production: 1200 steps
+  Chain 1 complete: 38400 valid samples, acceptance rate = 0.808
+Running MCMC chain 2/2
+  Burn-in: 600 steps
+  Production: 1200 steps
+  Chain 2 complete: 38400 valid samples, acceptance rate = 0.808
+Convergence: R-hat = 1.0002, n_eff = 76800.0 (2 chains)
+Convergence achieved!
+
+Posterior Summary:
+  Mean: 5.0070 ± 0.0104
+  Median: 5.0070
+  68% CI: [4.9968, 5.0172]
+  95% CI: [4.9866, 5.0273]
+  Samples: 76800 (2 chains)
+  True κ: 5.0000
+  Coverage: 68% CI ✓, 95% CI ✓
+MCMC completed at: 13:34:01
+Runtime: 2878.2 minutes
+Converged: True
+Posterior mean: 5.0070
+95% CI: [4.9866, 5.0273]
+Coverage: True
+Bias: 0.0070
+🎉 MCMC SUCCESS: Excellent parameter estimation!
+Generating final plots...
+Diagnostic plot saved: plots/phase4_final_success.png
+✅ Plots saved: plots/phase4_final_success.png
+🚀 MCMC COMPLETE - PHASE 3/4 OPTIMIZATION SUCCESSFUL!
+Ready for Phase 5: PAC-Bayes certified bounds

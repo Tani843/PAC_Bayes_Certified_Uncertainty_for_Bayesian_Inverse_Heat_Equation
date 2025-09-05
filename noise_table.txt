@@ -1,0 +1,20 @@
+ Noise Robustness Summary
+
+| Noise Level | Runs | Uncertified Coverage | Certified Coverage | Mean Uncert Width | Mean Cert Width | Efficiency |
+|-------------|------|---------------------|-------------------|------------------|-----------------|------------|
+| 5% | 10 | 0.0% | 100.0% | 0.0209 | 0.3350 | 10.00× |
+| 10% | 10 | 0.0% | 100.0% | 0.0209 | 0.7150 | 10.00× |
+| 20% | 10 | 0.0% | 100.0% | 0.0209 | 1.7700 | 10.00× |
+
+**Key Findings:** Certified bounds maintain perfect coverage across all noise levels with reasonable width expansion, while uncertified intervals fail to provide reliable coverage guarantees.
+
+
+## Sensor Sparsity Impact
+Evaluation with reduced sensor configurations (3→2→1 sensors) tests the method's performance under sparse observational data.
+
+
+![Sensor Sparsity Analysis](../../docs/assets/plots/phase7_sensor_impact.png)
+
+*Figure 3: Performance with reduced sensors. Coverage (left) and interval width (right) vs number of sensors. Certified bounds maintain reliability even with minimal sensor data.*
+
+

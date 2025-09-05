@@ -1,0 +1,67 @@
+# Jekyll Configuration for PAC-Bayes Certified Uncertainty Documentation
+title: "PAC-Bayes Certified Uncertainty for Bayesian Inverse Heat Equation"
+description: "Complete documentation for PAC-Bayes certified bounds applied to inverse PDE problems"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourusername.github.io" # Change to your GitHub Pages URL
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
+
+# Collections
+collections:
+  theory:
+    output: true
+    permalink: /:collection/:name/
+
+# Navigation
+header_pages:
+  - index.md
+  - methodology.md
+  - results.md
+  - theory/index.md
+  - conclusion.md
+  - contact.md
+
+# Site settings
+author: "Your Name"
+email: "your.email@example.com"
+github_username: "Tani843"
+
+# Math rendering
+mathjax: true
+
+# Custom CSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - src/
+  - results/
+  - data/
+  - plots/
+
+# Include custom assets
+include:
+  - assets/plots/
+  - docs/assets/plots/

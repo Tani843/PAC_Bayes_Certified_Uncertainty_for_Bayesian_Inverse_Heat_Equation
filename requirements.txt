@@ -1,0 +1,38 @@
+# PAC-Bayes Certified Uncertainty for Bayesian Inverse Heat Equation
+# Core scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# Bayesian inference
+emcee>=3.1.0
+corner>=2.2.0
+arviz>=0.15.0
+
+# Alternative: PyMC (uncomment if preferred over emcee)
+# pymc>=5.0.0
+# pytensor>=2.8.0
+
+# Data handling and utilities
+pandas>=1.5.0
+h5py>=3.8.0
+joblib>=1.2.0
+scikit-learn>=1.2.0
+tqdm>=4.64.0
+
+# Testing and development
+pytest>=7.2.0
+pytest-cov>=4.0.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Jekyll documentation (optional - for local development)
+jupyter>=1.0.0
+nbconvert>=7.0.0
+
+# Performance optimization
+numba>=0.56.0
+
+# Machine learning (kept from original for variational inference)
+torch>=1.9.0
