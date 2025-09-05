@@ -135,10 +135,28 @@ Comprehensive comparison of certified vs uncertified performance across all expe
 Statistical reliability of importance sampling across all validation experiments.
 
 ### Reliability Tier Distribution
-| Reliability Tier | Count | Percentage |
-|------------------|-------|------------|
-| High | 46 | 100.0% |
-| Total | 46 | 100.0% |
+
+<table>
+<thead>
+<tr>
+<th>Reliability Tier</th>
+<th>Count</th>
+<th>Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High</td>
+<td>46</td>
+<td>100.0%</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>46</td>
+<td>100.0%</td>
+</tr>
+</tbody>
+</table>
 
 **Interpretation**: Reliability tiers based on Effective Sample Size (ESS) indicate the statistical quality of importance reweighting:
 - **High**: ESS ≥ 1500, excellent statistical reliability
