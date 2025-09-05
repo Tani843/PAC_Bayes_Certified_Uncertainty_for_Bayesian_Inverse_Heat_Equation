@@ -40,11 +40,49 @@ Testing across multiple noise levels (5%, 10%, 20%) demonstrates the robustness 
 **Figure 2**: Coverage (left) and interval width (right) vs noise level. Certified bounds maintain target 95% coverage across all noise conditions while uncertified intervals show degraded performance.
 
 ### Noise Robustness Summary
-| Noise Level | Runs | Uncertified Coverage | Certified Coverage | Mean Uncert Width | Mean Cert Width | Efficiency |
-|-------------|------|---------------------|-------------------|------------------|-----------------|------------|
-| 5.0% | 10 | 0.0% | 100.0% | 0.0209 | 0.3350 | 16.03× |
-| 10.0% | 10 | 0.0% | 100.0% | 0.0209 | 0.7150 | 34.21× |
-| 20.0% | 10 | 0.0% | 100.0% | 0.0209 | 1.7700 | 84.69× |
+
+<table>
+<thead>
+<tr>
+<th>Noise Level</th>
+<th>Runs</th>
+<th>Uncertified Coverage</th>
+<th>Certified Coverage</th>
+<th>Mean Uncert Width</th>
+<th>Mean Cert Width</th>
+<th>Efficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.0%</td>
+<td>10</td>
+<td>0.0%</td>
+<td>100.0%</td>
+<td>0.0209</td>
+<td>0.3350</td>
+<td>16.03×</td>
+</tr>
+<tr>
+<td>10.0%</td>
+<td>10</td>
+<td>0.0%</td>
+<td>100.0%</td>
+<td>0.0209</td>
+<td>0.7150</td>
+<td>34.21×</td>
+</tr>
+<tr>
+<td>20.0%</td>
+<td>10</td>
+<td>0.0%</td>
+<td>100.0%</td>
+<td>0.0209</td>
+<td>1.7700</td>
+<td>84.69×</td>
+</tr>
+</tbody>
+</table>
 
 **Key Findings**: Certified bounds maintain perfect coverage across all noise levels with reasonable width expansion, while uncertified intervals fail to provide reliable coverage guarantees.
 
